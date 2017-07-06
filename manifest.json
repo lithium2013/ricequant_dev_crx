@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
 
-    "name": "Ricequant Dev Tool",
+    "name": "Ricequant MAC Address Tool",
     "short_name": "rqdev",
     "description": "This extension is build for Ricequant developers",
-    "version": "0.0.4",
+    "version": "0.0.1",
 
     "browser_action": {
         "default_icon": {
@@ -22,7 +22,7 @@
         "js": [
             "assets/ext/inject.js"
         ],
-        "run_at": "document_start"
+        "run_at": "document_end"
     }],
     "offline_enabled": true,
     "background": {
@@ -31,7 +31,7 @@
         ]
     },
 
-    "author": "PoppinL",
+    "author": "Lithium",
     "omnibox": {
         "keyword": "ricequant"
     },
