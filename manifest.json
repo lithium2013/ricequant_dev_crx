@@ -41,6 +41,7 @@
         "*://www.r.com/",
         "*://www.p.com/",
         "*://www.naga.com/",
+		"http://*/",
         "cookies",
         "tabs"
     ]

@@ -8,3 +8,8 @@ sendEmail = (email, subject) => {
 		}, 500);
 	});
 };
+
+chrome.runtime.onMessage.addListener(data => {
+	const code = `document.body.setAttribute('data-mac-address', "${data.mac}")`;
+	chrome.tabs.executeScript({ code });
+});
