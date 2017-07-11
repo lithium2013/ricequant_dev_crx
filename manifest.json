@@ -13,11 +13,14 @@
             "128": "assets/ext/logo128.png"
         },
         "default_popup": "assets/popup/popup.html",
-        "default_title": "Ricequant Dev Tool"
+        "default_title": "Ricequant MAC Address Tool"
     },
     "content_scripts": [{
         "matches": [
-            "*://www.ricequant.com/*"
+            "*://www.ricequant.com/*",
+        	"*://www.r.com/*",
+        	"*://www.p.com/*",
+        	"*://www.naga.com/*"
         ],
         "js": [
             "assets/ext/inject.js"
