@@ -15,3 +15,9 @@ footer.page-footer {
     margin-top: 0;
     padding-top: 0;
 }
+
+.collapsible-body p.item {
+	padding: 0 0 0 2rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+}

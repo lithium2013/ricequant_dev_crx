@@ -8,7 +8,9 @@ const xhr = new XMLHttpRequest();
 xhr.open("GET", "http://localhost:10888", true);
 xhr.onreadystatechange = () => {
 	if (xhr.readyState == 4 && xhr.status === 200) {
-		bg.setMac(xhr.responseText);
+		const res = bg.setMac(xhr.responseText);
+		document.getElementById('ip-addr').innerText = res.ip;
+		document.getElementById('mac-addr').innerText = res.mac;
 	}
 };
 xhr.send();

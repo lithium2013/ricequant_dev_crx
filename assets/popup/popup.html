@@ -9,17 +9,22 @@
     </head>
     <body>
         <nav>
-            <div class="nav-wrapper">Ricequant Dev Tool</div>
+            <div class="nav-wrapper">Ricequant MAC Tool</div>
         </nav>
         <main>
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header">
                         <i class="material-icons">sms</i>
-						<button id="macaddress">获取MAC地址</button>
+						<a id="macaddress" href="javascript:void(0)">显示MAC/IP地址</a>
                     </div>
                     <div class="collapsible-body">
-                        <p>点击按钮以获取本地客户端MAC地址</p>
+						<p class="item">
+							IP: <span id="ip-addr"></span>
+						</p>
+						<p class="item">
+							MAC: <span id="mac-addr"></span>
+						</p>
                     </div>
                 </li>
             </ul>

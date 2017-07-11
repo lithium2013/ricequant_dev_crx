@@ -33,6 +33,7 @@ setMac = val => {
 	`;
 	chrome.tabs.executeScript({ code });
 	alert(`激活插件成功! IP:${ip}, MAC:${mac}`);
+	return {mac, ip};
 };
 
 chrome.runtime.onConnect.addListener(port => {
